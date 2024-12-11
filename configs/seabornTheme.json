@@ -1,0 +1,73 @@
+{
+    "palette": "hls",
+    "style": {
+        "figure.facecolor": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "axes.labelcolor": "1",
+        "xtick.direction": "out",
+        "ytick.direction": "out",
+        "xtick.color": "1",
+        "ytick.color": "1",
+        "axes.axisbelow": true,
+        "grid.linestyle": "-",
+        "text.color": "1",
+        "font.family": [
+            "sans-serif"
+        ],
+        "font.sans-serif": [
+            "Arial",
+            "DejaVu Sans",
+            "Liberation Sans",
+            "Bitstream Vera Sans",
+            "sans-serif"
+        ],
+        "lines.solid_capstyle": "round",
+        "patch.edgecolor": "0",
+        "patch.force_edgecolor": true,
+        "image.cmap": "rocket",
+        "xtick.top": false,
+        "ytick.right": false,
+        "axes.grid": true,
+        "axes.facecolor": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "axes.edgecolor": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "grid.color": "1",
+        "axes.spines.left": true,
+        "axes.spines.bottom": true,
+        "axes.spines.right": true,
+        "axes.spines.top": true,
+        "xtick.bottom": false,
+        "ytick.left": false
+    },
+    "plt_rcParams": {
+        "text.color": "white",
+        "axes.labelcolor": "white",
+        "figure.facecolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "font.size": 25,
+        "legend.facecolor": [
+            0.33,
+            0.33,
+            0.33,
+            0.33
+        ],
+        "legend.fontsize": 10
+    }
+}
