@@ -1,0 +1,108 @@
+type,minute,team,player,position,location,bad_behaviour_card,dribble_outcome,interception_outcome,pass_goal_assist,shot_outcome,substitution_outcome,substitution_replacement,foul_committed_card,injury_stoppage_in_chain
+Pass,59,Bayer Leverkusen,Victor Okoh Boniface,Center Forward,"[101.7, 28.5]",N/A,N/A,N/A,True,N/A,N/A,N/A,N/A,N/A
+Pass,67,Bayer Leverkusen,Robert Andrich,Left Defensive Midfield,"[81.3, 29.6]",N/A,N/A,N/A,True,N/A,N/A,N/A,N/A,N/A
+Pass,82,Bayer Leverkusen,Exequiel Alejandro Palacios,Left Defensive Midfield,"[31.0, 42.8]",N/A,N/A,N/A,True,N/A,N/A,N/A,N/A,N/A
+Pass,89,Bayer Leverkusen,Alejandro Grimaldo García,Left Wing Back,"[66.1, 27.3]",N/A,N/A,N/A,True,N/A,N/A,N/A,N/A,N/A
+Dribble,2,Werder Bremen,Romano Schmid,Left Center Midfield,"[63.0, 4.7]",N/A,Incomplete,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Dribble,18,Bayer Leverkusen,Robert Andrich,Left Defensive Midfield,"[15.6, 28.1]",N/A,Complete,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Dribble,25,Werder Bremen,Nick Woltemade,Right Center Forward,"[65.6, 65.0]",N/A,Complete,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Dribble,25,Werder Bremen,Nick Woltemade,Right Center Forward,"[64.8, 65.3]",N/A,Incomplete,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Dribble,34,Bayer Leverkusen,Amine Adli,Left Attacking Midfield,"[105.1, 22.1]",N/A,Complete,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Dribble,34,Bayer Leverkusen,Jonas Hofmann,Right Attacking Midfield,"[105.3, 45.2]",N/A,Complete,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Dribble,39,Werder Bremen,Mitchell Weiser,Right Wing Back,"[90.0, 65.3]",N/A,Complete,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Dribble,45,Bayer Leverkusen,Amine Adli,Left Attacking Midfield,"[22.5, 9.6]",N/A,Incomplete,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Dribble,45,Werder Bremen,Christian Groß,Center Back,"[109.8, 71.3]",N/A,Complete,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Dribble,47,Bayer Leverkusen,Nathan Tella,Right Wing Back,"[88.7, 31.7]",N/A,Incomplete,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Dribble,47,Werder Bremen,Nick Woltemade,Right Center Forward,"[102.3, 66.6]",N/A,Incomplete,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Dribble,55,Bayer Leverkusen,Nathan Tella,Right Wing Back,"[37.4, 74.9]",N/A,Incomplete,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Dribble,59,Bayer Leverkusen,Victor Okoh Boniface,Center Forward,"[103.8, 25.6]",N/A,Complete,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Dribble,64,Bayer Leverkusen,Florian Wirtz,Left Attacking Midfield,"[106.1, 25.3]",N/A,Complete,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Dribble,66,Bayer Leverkusen,Jeremie Frimpong,Right Wing Back,"[111.8, 64.8]",N/A,Incomplete,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Dribble,71,Bayer Leverkusen,Jeremie Frimpong,Right Wing Back,"[96.9, 53.9]",N/A,Complete,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Dribble,72,Bayer Leverkusen,Patrik Schick,Center Forward,"[88.4, 56.6]",N/A,Incomplete,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Dribble,74,Werder Bremen,Leonardo Bittencourt,Right Center Midfield,"[76.6, 53.8]",N/A,Incomplete,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Dribble,74,Werder Bremen,Leonardo Bittencourt,Right Center Midfield,"[92.4, 76.9]",N/A,Incomplete,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Dribble,74,Bayer Leverkusen,Florian Wirtz,Left Attacking Midfield,"[28.8, 4.8]",N/A,Incomplete,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Dribble,78,Werder Bremen,Isak Hansen-Aarøen,Left Center Midfield,"[93.0, 22.4]",N/A,Incomplete,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Dribble,79,Bayer Leverkusen,Florian Wirtz,Left Attacking Midfield,"[73.1, 9.2]",N/A,Incomplete,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Dribble,85,Werder Bremen,Romano Schmid,Right Center Midfield,"[64.5, 74.1]",N/A,Incomplete,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Dribble,86,Bayer Leverkusen,Exequiel Alejandro Palacios,Left Defensive Midfield,"[67.1, 18.1]",N/A,Complete,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Dribble,87,Werder Bremen,Romano Schmid,Right Center Midfield,"[60.1, 60.6]",N/A,Complete,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Dribble,89,Werder Bremen,Mitchell Weiser,Right Wing Back,"[99.2, 59.6]",N/A,Complete,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Interception,2,Werder Bremen,Senne Lynen,Center Defensive Midfield,"[41.6, 61.4]",N/A,N/A,Lost In Play,N/A,N/A,N/A,N/A,N/A,N/A
+Interception,4,Bayer Leverkusen,Granit Xhaka,Right Defensive Midfield,"[57.2, 39.1]",N/A,N/A,Lost In Play,N/A,N/A,N/A,N/A,N/A,N/A
+Interception,15,Werder Bremen,Senne Lynen,Center Defensive Midfield,"[28.1, 20.8]",N/A,N/A,Lost In Play,N/A,N/A,N/A,N/A,N/A,N/A
+Interception,17,Werder Bremen,Leonardo Bittencourt,Right Center Midfield,"[36.6, 31.5]",N/A,N/A,Won,N/A,N/A,N/A,N/A,N/A,N/A
+Interception,17,Bayer Leverkusen,Jonathan Tah,Center Back,"[69.4, 53.5]",N/A,N/A,Won,N/A,N/A,N/A,N/A,N/A,N/A
+Interception,19,Bayer Leverkusen,Nathan Tella,Right Wing Back,"[30.7, 50.5]",N/A,N/A,Lost In Play,N/A,N/A,N/A,N/A,N/A,N/A
+Interception,20,Bayer Leverkusen,Edmond Fayçal Tapsoba,Left Center Back,"[46.8, 30.2]",N/A,N/A,Lost In Play,N/A,N/A,N/A,N/A,N/A,N/A
+Interception,32,Werder Bremen,Christian Groß,Center Back,"[59.0, 63.0]",N/A,N/A,Success In Play,N/A,N/A,N/A,N/A,N/A,N/A
+Interception,32,Werder Bremen,Julián Malatini,Right Center Back,"[48.1, 34.1]",N/A,N/A,Lost In Play,N/A,N/A,N/A,N/A,N/A,N/A
+Interception,38,Werder Bremen,Christian Groß,Center Back,"[56.2, 22.7]",N/A,N/A,Won,N/A,N/A,N/A,N/A,N/A,N/A
+Interception,46,Werder Bremen,Felix Agu,Left Wing Back,"[16.3, 12.7]",N/A,N/A,Won,N/A,N/A,N/A,N/A,N/A,N/A
+Interception,51,Bayer Leverkusen,Florian Wirtz,Left Attacking Midfield,"[27.9, 30.8]",N/A,N/A,Success In Play,N/A,N/A,N/A,N/A,N/A,N/A
+Interception,52,Werder Bremen,Julián Malatini,Right Center Back,"[31.1, 73.8]",N/A,N/A,Won,N/A,N/A,N/A,N/A,N/A,N/A
+Interception,65,Werder Bremen,Milos Veljkovic,Left Center Back,"[9.1, 23.7]",N/A,N/A,Lost Out,N/A,N/A,N/A,N/A,N/A,N/A
+Interception,79,Bayer Leverkusen,Odilon Kossonou,Right Center Back,"[25.3, 45.8]",N/A,N/A,Won,N/A,N/A,N/A,N/A,N/A,N/A
+Interception,82,Bayer Leverkusen,Florian Wirtz,Left Attacking Midfield,"[71.0, 5.2]",N/A,N/A,Lost In Play,N/A,N/A,N/A,N/A,N/A,N/A
+Interception,87,Werder Bremen,Milos Veljkovic,Left Center Back,"[26.1, 25.0]",N/A,N/A,Won,N/A,N/A,N/A,N/A,N/A,N/A
+Foul Committed,5,Bayer Leverkusen,Edmond Fayçal Tapsoba,Left Center Back,"[60.0, 44.9]",N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Foul Committed,8,Bayer Leverkusen,Robert Andrich,Left Defensive Midfield,"[63.7, 53.5]",N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Foul Committed,10,Bayer Leverkusen,Edmond Fayçal Tapsoba,Left Center Back,"[84.8, 11.2]",N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Foul Committed,13,Werder Bremen,Julián Malatini,Right Center Back,"[69.9, 74.7]",N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Foul Committed,14,Bayer Leverkusen,Amine Adli,Left Attacking Midfield,"[76.9, 49.2]",N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Foul Committed,17,Werder Bremen,Romano Schmid,Left Center Midfield,"[63.2, 33.3]",N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Foul Committed,21,Werder Bremen,Julián Malatini,Right Center Back,"[9.4, 41.9]",N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Foul Committed,30,Bayer Leverkusen,Amine Adli,Left Attacking Midfield,"[83.5, 70.0]",N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yellow Card,N/A
+Foul Committed,33,Werder Bremen,Christian Groß,Center Back,"[64.3, 37.5]",N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Foul Committed,35,Werder Bremen,Leonardo Bittencourt,Right Center Midfield,"[35.9, 70.2]",N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Foul Committed,37,Bayer Leverkusen,Jonathan Tah,Center Back,"[77.4, 56.1]",N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Foul Committed,42,Bayer Leverkusen,Edmond Fayçal Tapsoba,Left Center Back,"[85.3, 9.1]",N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Foul Committed,48,Bayer Leverkusen,Florian Wirtz,Left Attacking Midfield,"[59.9, 40.3]",N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Foul Committed,64,Bayer Leverkusen,Granit Xhaka,Right Defensive Midfield,"[85.1, 48.4]",N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Foul Committed,65,Werder Bremen,Senne Lynen,Center Defensive Midfield,"[31.2, 36.4]",N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Foul Committed,81,Bayer Leverkusen,Odilon Kossonou,Right Center Back,"[56.6, 77.4]",N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Foul Committed,87,Bayer Leverkusen,Edmond Fayçal Tapsoba,Left Center Back,"[76.9, 28.7]",N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Shot,6,Werder Bremen,Leonardo Bittencourt,Right Center Midfield,"[100.4, 35.1]",N/A,N/A,N/A,N/A,Blocked,N/A,N/A,N/A,N/A
+Shot,7,Bayer Leverkusen,Piero Martín Hincapié Reyna,Left Wing Back,"[114.6, 33.5]",N/A,N/A,N/A,N/A,Saved,N/A,N/A,N/A,N/A
+Shot,11,Werder Bremen,Julián Malatini,Right Center Back,"[106.2, 55.8]",N/A,N/A,N/A,N/A,Blocked,N/A,N/A,N/A,N/A
+Shot,13,Bayer Leverkusen,Jonathan Tah,Center Back,"[113.9, 47.4]",N/A,N/A,N/A,N/A,Blocked,N/A,N/A,N/A,N/A
+Shot,16,Bayer Leverkusen,Granit Xhaka,Right Defensive Midfield,"[89.2, 42.5]",N/A,N/A,N/A,N/A,Blocked,N/A,N/A,N/A,N/A
+Shot,16,Bayer Leverkusen,Jonathan Tah,Center Back,"[110.2, 32.6]",N/A,N/A,N/A,N/A,Wayward,N/A,N/A,N/A,N/A
+Shot,18,Werder Bremen,Nick Woltemade,Right Center Forward,"[105.4, 45.1]",N/A,N/A,N/A,N/A,Blocked,N/A,N/A,N/A,N/A
+Shot,24,Bayer Leverkusen,Victor Okoh Boniface,Center Forward,"[108.0, 40.0]",N/A,N/A,N/A,N/A,Goal,N/A,N/A,N/A,N/A
+Shot,27,Bayer Leverkusen,Granit Xhaka,Right Defensive Midfield,"[101.5, 47.5]",N/A,N/A,N/A,N/A,Blocked,N/A,N/A,N/A,N/A
+Shot,28,Bayer Leverkusen,Jonathan Tah,Center Back,"[116.3, 46.0]",N/A,N/A,N/A,N/A,Saved,N/A,N/A,N/A,N/A
+Shot,28,Bayer Leverkusen,Victor Okoh Boniface,Center Forward,"[116.3, 43.3]",N/A,N/A,N/A,N/A,Saved,N/A,N/A,N/A,N/A
+Shot,34,Bayer Leverkusen,Jonas Hofmann,Right Attacking Midfield,"[109.4, 44.9]",N/A,N/A,N/A,N/A,Blocked,N/A,N/A,N/A,N/A
+Shot,37,Bayer Leverkusen,Amine Adli,Left Attacking Midfield,"[113.1, 27.5]",N/A,N/A,N/A,N/A,Post,N/A,N/A,N/A,N/A
+Shot,43,Bayer Leverkusen,Edmond Fayçal Tapsoba,Left Center Back,"[110.1, 41.6]",N/A,N/A,N/A,N/A,Blocked,N/A,N/A,N/A,N/A
+Shot,45,Werder Bremen,Mitchell Weiser,Right Wing Back,"[115.9, 40.1]",N/A,N/A,N/A,N/A,Saved,N/A,N/A,N/A,N/A
+Shot,50,Werder Bremen,Leonardo Bittencourt,Right Center Midfield,"[97.5, 40.8]",N/A,N/A,N/A,N/A,Saved,N/A,N/A,N/A,N/A
+Shot,58,Bayer Leverkusen,Florian Wirtz,Left Attacking Midfield,"[93.8, 34.8]",N/A,N/A,N/A,N/A,Off T,N/A,N/A,N/A,N/A
+Shot,59,Bayer Leverkusen,Granit Xhaka,Right Defensive Midfield,"[93.0, 39.1]",N/A,N/A,N/A,N/A,Goal,N/A,N/A,N/A,N/A
+Shot,64,Bayer Leverkusen,Florian Wirtz,Left Attacking Midfield,"[106.3, 29.6]",N/A,N/A,N/A,N/A,Blocked,N/A,N/A,N/A,N/A
+Shot,67,Bayer Leverkusen,Florian Wirtz,Left Attacking Midfield,"[93.5, 40.1]",N/A,N/A,N/A,N/A,Goal,N/A,N/A,N/A,N/A
+Shot,70,Bayer Leverkusen,Patrik Schick,Center Forward,"[112.5, 29.6]",N/A,N/A,N/A,N/A,Saved,N/A,N/A,N/A,N/A
+Shot,71,Bayer Leverkusen,Jeremie Frimpong,Right Wing Back,"[108.0, 51.1]",N/A,N/A,N/A,N/A,Saved,N/A,N/A,N/A,N/A
+Shot,74,Werder Bremen,Olivier Deman,Left Wing Back,"[108.1, 27.2]",N/A,N/A,N/A,N/A,Saved,N/A,N/A,N/A,N/A
+Shot,74,Werder Bremen,Romano Schmid,Left Center Midfield,"[98.2, 42.1]",N/A,N/A,N/A,N/A,Off T,N/A,N/A,N/A,N/A
+Shot,80,Bayer Leverkusen,Exequiel Alejandro Palacios,Left Defensive Midfield,"[101.6, 43.3]",N/A,N/A,N/A,N/A,Off T,N/A,N/A,N/A,N/A
+Shot,82,Bayer Leverkusen,Florian Wirtz,Left Attacking Midfield,"[103.6, 35.0]",N/A,N/A,N/A,N/A,Goal,N/A,N/A,N/A,N/A
+Shot,89,Bayer Leverkusen,Florian Wirtz,Left Attacking Midfield,"[106.4, 48.8]",N/A,N/A,N/A,N/A,Goal,N/A,N/A,N/A,N/A
+Injury Stoppage,7,Werder Bremen,Michael Zetterer,Goalkeeper,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,True
+Injury Stoppage,22,Werder Bremen,Julián Malatini,Right Center Back,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Injury Stoppage,33,Bayer Leverkusen,Nathan Tella,Right Wing Back,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Injury Stoppage,33,Werder Bremen,Julián Malatini,Right Center Back,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Injury Stoppage,82,Bayer Leverkusen,Lukáš Hrádecký,Goalkeeper,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Injury Stoppage,84,Werder Bremen,Michael Zetterer,Goalkeeper,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Substitution,45,Bayer Leverkusen,Amine Adli,Left Attacking Midfield,N/A,N/A,N/A,N/A,N/A,N/A,Tactical,Florian Wirtz,N/A,N/A
+Substitution,61,Bayer Leverkusen,Nathan Tella,Right Wing Back,N/A,N/A,N/A,N/A,N/A,N/A,Tactical,Jeremie Frimpong,N/A,N/A
+Substitution,61,Bayer Leverkusen,Victor Okoh Boniface,Center Forward,N/A,N/A,N/A,N/A,N/A,N/A,Tactical,Patrik Schick,N/A,N/A
+Substitution,68,Werder Bremen,Felix Agu,Left Wing Back,N/A,N/A,N/A,N/A,N/A,N/A,Tactical,Olivier Deman,N/A,N/A
+Substitution,68,Werder Bremen,Nick Woltemade,Right Center Forward,N/A,N/A,N/A,N/A,N/A,N/A,Tactical,Dawid Kownacki,N/A,N/A
+Substitution,75,Bayer Leverkusen,Piero Martín Hincapié Reyna,Left Wing Back,N/A,N/A,N/A,N/A,N/A,N/A,Tactical,Alejandro Grimaldo García,N/A,N/A
+Substitution,76,Werder Bremen,Leonardo Bittencourt,Right Center Midfield,N/A,N/A,N/A,N/A,N/A,N/A,Injury,Isak Hansen-Aarøen,N/A,N/A
+Substitution,76,Bayer Leverkusen,Granit Xhaka,Left Defensive Midfield,N/A,N/A,N/A,N/A,N/A,N/A,Tactical,Exequiel Alejandro Palacios,N/A,N/A
+Bad Behaviour,46,Werder Bremen,Leonardo Bittencourt,Right Center Midfield,N/A,Yellow Card,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Bad Behaviour,46,Bayer Leverkusen,Piero Martín Hincapié Reyna,Left Wing Back,N/A,Yellow Card,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A

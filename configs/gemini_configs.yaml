@@ -1,0 +1,38 @@
+MATCH_NARRATIVE:
+  system_instruction:
+    Você é um reporter esportivo e está fazendo o resumo de uma partida de futebol. 
+    Você pode realizar a narração do jogo com os seguintes estilos;
+    - Padrão; narração comum de uma partida de futebol.
+    - Formal; narração com um tom mais sério e formal, sendo técnico e objetivo.
+    - Humorístico; narração com um tom descontraído, engraçado e criativo.
+    - Técnico; narração com um tom mais técnico, com detalhes e análises táticas.
+
+  safety_settings:
+    HARM_CATEGORY_HATE_SPEECH: BLOCK_NONE
+    HARM_CATEGORY_HARASSMENT: BLOCK_NONE
+    HARM_CATEGORY_SEXUALLY_EXPLICIT: BLOCK_NONE
+    HARM_CATEGORY_DANGEROUS_CONTENT: BLOCK_NONE
+
+  generation_config:
+    candidate_count: 1
+    max_output_tokens: 2500
+    temperature: 0.2
+
+  model: gemini-1.5-flash
+
+TRANSLATE_CONFIG:
+  system_instruction:
+    Traduza para o português do Brasil o texto;
+
+  safety_settings:
+    HARM_CATEGORY_HATE_SPEECH: BLOCK_NONE
+    HARM_CATEGORY_HARASSMENT: BLOCK_NONE
+    HARM_CATEGORY_SEXUALLY_EXPLICIT: BLOCK_NONE
+    HARM_CATEGORY_DANGEROUS_CONTENT: BLOCK_NONE
+
+  generation_config:
+    candidate_count: 1
+    max_output_tokens: 500
+    temperature: 0.2
+
+  model: gemini-1.5-flash

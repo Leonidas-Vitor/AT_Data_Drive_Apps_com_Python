@@ -1,28 +1,7 @@
 from pydantic import BaseModel, Field
 from datetime import date
-from typing import Optional, List
+from typing import Optional, List, Literal
 
-
-class StockParams(BaseModel):
-    ticker: str
-    start : Optional[date] = None
-    end : Optional[date] = date.today()
-    period : Optional[str] = '5y'
-
-    class Config:
-        populate_by_name = True
-
-
-    
-#In Models
-class MatchParams(BaseModel):
-    match_id: int
-
-class PlayerParams(BaseModel):
-    match_id: int
-    player_id: int
-
-#Out Models
 class MatchSummary(BaseModel):
     match_summary: str
 
