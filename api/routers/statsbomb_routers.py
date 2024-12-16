@@ -14,7 +14,7 @@ router = APIRouter(
 @router.get("/")
 def Status():
     '''
-    Retorna código 202 se o serviço estiver disponível
+    Retorna código 200 se o serviço estiver disponível
     '''
     return True
 
