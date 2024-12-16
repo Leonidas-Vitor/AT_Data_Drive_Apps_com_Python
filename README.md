@@ -16,8 +16,8 @@ A aplicação visa entregar ao usuário as estatísticas e resumos de diversas p
 A aplicação pode ser acessada diretamente em ambiente web quanto utilizá-la localmente:
 
 ### Ambiente web
-Acesse: <Endereço da aplicação publicada>
-Documentação da API: <Endereço Docs da api publicada>
+Acesse: <[Endereço da aplicação publicada](https://at-data-driven-apps-com-python.streamlit.app/)>
+Documentação da API: <[Endereço Docs da api publicada](https://at-data-driven-apps-com-python.onrender.com/docs)>
 
 ### Ambiente local
 1. Crie ou ative um ambiente Python no terminal
@@ -27,7 +27,10 @@ Documentação da API: <Endereço Docs da api publicada>
 5. Acesse a api no endereço <http://127.0.0.1:8000/>
 6. Acesse a aplicação no endereço <http://localhost:8501/>
 
+## Testes da API
+Na pasta tests/API_Tests.ipynb existe um notebook pronto para realizar consultas a API e verificar seus retornos.
+
 ## Problemas conhecidos
 
-- Erro exporádico de índice de liste "langchain\chains\base.py", line 516
-- Erro exporádico em "langchain_community\utilities\google_finance.py", line 79
+- Como a API está hospedada em um serviço de terceiros, ela pode demorar + ou 0 1 minuto para ser ligada
+- Erro exporádico de índice de lista "langchain\chains\base.py", line 516

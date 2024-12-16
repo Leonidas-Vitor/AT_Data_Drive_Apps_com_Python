@@ -26,6 +26,33 @@ def get_sb_events(match_id):
         return sb.events(match_id=match_id).fillna('N/A')
     except:
         return None
+    
+def get_sb_list_of_events(match_id):
+    '''
+    Retorna a lista de eventos de uma partida específica
+    '''
+    try:
+        return sb.events(match_id=match_id)['type'].unique()
+    except:
+        return None
+    
+def get_sb_match_columns(match_id):
+    '''
+    Retorna as colunas de uma partida específica
+    '''
+    try:
+        return sb.events(match_id=match_id).columns
+    except:
+        return None
+    
+def get_sb_events_filter_type(match_id, event_type):
+    '''
+    Retorna os eventos de uma partida específica de um tipo específico (ex: passes, chutes, etc.)
+    '''
+    try:
+        return sb.events(match_id=match_id)[sb.events(match_id=match_id)['type'] == event_type]
+    except:
+        return None
 
 def get_sb_events_types(match_id):
     '''
@@ -44,6 +71,22 @@ def get_sb_events_type(match_id, event_type):
         return sb.events(match_id=match_id, split=True, flatten_attrs=False)[event_type]
     except:
         return None
+    
+def get_sb_match_players(match_id):
+    '''
+    Retorna os jogadores de uma partida específica
+    '''
+    try:
+        events = get_sb_events(match_id)
+        players = events[['player_id', 'player', 'team']].drop_duplicates()
+        return players
+    except:
+        return None
+    
+def get_sb_lineups(match_id):
+    return sb.lineups(match_id=match_id)
+
+#=============PRINCIPAIS ENDPOINTS
 
 def get_sb_match_main_events(match_id):
     '''
@@ -61,17 +104,6 @@ def get_sb_match_main_events(match_id):
         main_events = main_events[(main_events['pass_goal_assist'] == True) | (main_events['type'] != 'Pass')]
                 
         return main_events
-    except:
-        return None
-    
-def get_sb_match_players(match_id):
-    '''
-    Retorna os jogadores de uma partida específica
-    '''
-    try:
-        events = get_sb_events(match_id)
-        players = events[['player_id', 'player', 'team']].drop_duplicates()
-        return players
     except:
         return None
     

@@ -4,7 +4,7 @@ import requests
 st.title("Documentação da API (Swagger UI)")
 
 # URL do Swagger
-swagger_url = st.session_state['config']['API_URL'] + "docs"  # ou "http://127.0.0.1:8000/docs"
+swagger_url = st.secrets['API_URL'] + "docs"  # ou "http://127.0.0.1:8000/docs"
 
 # Incluir estilo customizado com fundo branco
 st.markdown(
