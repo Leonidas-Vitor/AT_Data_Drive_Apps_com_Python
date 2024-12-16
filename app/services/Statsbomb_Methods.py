@@ -1,5 +1,7 @@
 from statsbombpy import sb
+import streamlit as st
 
+@st.cache_data
 def get_sb_competitions():
     '''
     Retorna as competições disponíveis no StatsBomb
@@ -9,6 +11,7 @@ def get_sb_competitions():
     except:
         return None
 
+@st.cache_data
 def get_sb_matches(competition_id, season_id):
     '''
     Retorna as partidas de uma competição e temporada específicas
@@ -18,6 +21,7 @@ def get_sb_matches(competition_id, season_id):
     except:
         return None
 
+@st.cache_data
 def get_sb_events(match_id):
     '''
     Retorna os eventos de uma partida específica
@@ -27,6 +31,7 @@ def get_sb_events(match_id):
     except:
         return None
     
+@st.cache_data
 def get_sb_list_of_events(match_id):
     '''
     Retorna a lista de eventos de uma partida específica
@@ -35,7 +40,18 @@ def get_sb_list_of_events(match_id):
         return sb.events(match_id=match_id)['type'].unique()
     except:
         return None
-    
+
+@st.cache_data
+def get_sb_match_columns(match_id):
+    '''
+    Retorna as colunas de uma partida específica
+    '''
+    try:
+        return sb.events(match_id=match_id).columns
+    except:
+        return None
+
+@st.cache_data
 def get_sb_events_filter_type(match_id, event_type):
     '''
     Retorna os eventos de uma partida específica de um tipo específico (ex: passes, chutes, etc.)
@@ -46,6 +62,7 @@ def get_sb_events_filter_type(match_id, event_type):
         return None
 
 #---- Inútil para essa aplicação
+@st.cache_data
 def get_sb_events_types(match_id):
     '''
     Retorna os eventos de uma partida específica separados por tipo (ex: passes, chutes, etc.)
@@ -54,7 +71,7 @@ def get_sb_events_types(match_id):
         return sb.events(match_id=match_id, split=True, flatten_attrs=False)
     except:
         return None
-
+@st.cache_data
 def get_sb_events_type(match_id, event_type):
     '''
     Retorna os eventos de uma partida específica de um tipo específico (ex: passes, chutes, etc.)
@@ -65,7 +82,7 @@ def get_sb_events_type(match_id, event_type):
         return None
     
 #------------------------------
-
+@st.cache_data
 def get_sb_match_main_events(match_id):
     '''
     Retorna os principais eventos de uma partida específica
@@ -85,6 +102,7 @@ def get_sb_match_main_events(match_id):
     except:
         return None
     
+@st.cache_data
 def get_sb_match_players(match_id):
     '''
     Retorna os jogadores de uma partida específica
@@ -92,20 +110,30 @@ def get_sb_match_players(match_id):
     try:
         events = get_sb_events(match_id)
         players = events[['player_id', 'player', 'team']].drop_duplicates()
+        players['player_id'] = players['player_id'].astype(str)
+        players['player_id'] = players['player_id'].str.replace('.0', '', regex=False)
         return players
     except:
         return None
-    
+
+@st.cache_data
 def get_sb_lineups(match_id):
     return sb.lineups(match_id=match_id)
+
+def safe_divide(a, b):
+    try:
+        return a / b
+    except:
+        return 0
     
+@st.cache_data
 def get_sb_match_player_profile(match_id, player_id):
     '''
     Retorna o perfil de um jogador em uma partida específica
     '''
     try:
         events = get_sb_events(match_id)
-        player_events = events[events['player_id'] == player_id]
+        player_events = events[events['player_id'] == int(player_id)]
         player_events = player_events[(player_events['type'].isin(['Pass', 'Shot', 'Dribble', 'Interception', 
                                                     'Foul Committed', 'Substitution', 
                                                     'Injury Stoppage', 'Bad Behaviour', 
@@ -131,21 +159,22 @@ def get_sb_match_player_profile(match_id, player_id):
         profile['tempo_jogado'] = player_events['minute'].max() - player_events['minute'].min()
         profile['evento_sob_pressao'] = player_events[player_events['under_pressure'] == True].shape[0]
 
-        profile['taxa_gols'] = round(profile['total_gols'] / profile['total_chutes'], 2)
-        profile['taxa_assistencias'] = round(profile['total_assistencias'] / profile['total_passes'], 2)
-        profile['taxa_dribles'] = round(player_events[(player_events['type'] == 'Dribble') & (player_events['dribble_outcome'] == 'Complete')].shape[0] / profile['total_dribles'], 2)
-        profile['passes_por_minuto'] = round(profile['total_passes'] / profile['tempo_jogado'], 2)
-        profile['chutes_por_minuto'] = round(profile['total_chutes'] / profile['tempo_jogado'], 2)
-        profile['dribles_por_minuto'] = round(profile['total_dribles'] / profile['tempo_jogado'], 2)
-        profile['interceptacoes_por_minuto'] = round(profile['total_interceptacoes'] / profile['tempo_jogado'], 2)
-        profile['faltas_por_minuto'] = round(profile['total_faltas'] / profile['tempo_jogado'], 2)
+
+        profile['taxa_gols'] = round(safe_divide(profile['total_gols'], profile['total_chutes']), 2)
+        profile['taxa_assistencias'] = round(safe_divide(profile['total_assistencias'], profile['total_passes']), 2)
+        profile['taxa_dribles'] = round(safe_divide(player_events[(player_events['type'] == 'Dribble') & (player_events['dribble_outcome'] == 'Complete')].shape[0], profile['total_dribles']), 2)
+        profile['passes_por_minuto'] = round(safe_divide(profile['total_passes'], profile['tempo_jogado']), 2)
+        profile['chutes_por_minuto'] = round(safe_divide(profile['total_chutes'], profile['tempo_jogado']), 2)
+        profile['dribles_por_minuto'] = round(safe_divide(profile['total_dribles'], profile['tempo_jogado']), 2)
+        profile['interceptacoes_por_minuto'] = round(safe_divide(profile['total_interceptacoes'], profile['tempo_jogado']), 2)
+        profile['faltas_por_minuto'] = round(safe_divide(profile['total_faltas'], profile['tempo_jogado']), 2)
 
         profile['total_recuperacoes'] = player_events[player_events['type'] == 'Ball Recovery'].shape[0]
         profile['total_recebimentos'] = player_events[player_events['type'] == 'Ball Receipt*'].shape[0]
         profile['total_mal_comportamento'] = player_events[player_events['type'] == 'Bad Behaviour'].shape[0]
 
         return profile
-    
+        
     except:
         return None
 

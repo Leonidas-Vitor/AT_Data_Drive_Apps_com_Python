@@ -26,7 +26,8 @@ def load_agent(memory) -> LLMChain:
     Você é um espescialista em futebol e está conversando com um usuário que deseja saber mais 
     sobre a partida {match_name} (Id da partida: {match_id}).
     Seu objetivo é utilizar as ferramentas disponíveis para coletar os dados necessários para 
-    responder a pergunta do usuário.
+    responder a pergunta do usuário. Se não for necessário utilizar nenhuma ferramenta, você pode
+    responder diretamente ao usuário.
 
     Você tem acesso as seguintes ferramentas: {tool_names}
     Descrição das ferramentas: {tools}
@@ -59,9 +60,11 @@ def load_agent(memory) -> LLMChain:
     Final Answer: [Sua resposta final ao usuário.]
     Ferramentas utilizadas: [Ferraentas utilizadas para coletar informações.]
     
+    ## Regras:
+    - A resposta final ao usuário deve ser em português.
 
     ## Tarefa atual
-    {input}
+    {human_input}
 
     ## Agent's Workspace
     {agent_scratchpad}
@@ -70,22 +73,23 @@ def load_agent(memory) -> LLMChain:
     prompt = PromptTemplate(
        input_variables=["match_id",
                         "match_name",
-                        "input",
+                        "human_input",
                         "agent_scratchpad",
                         "tool_names",
                         "tools"],
        template=base_prompt
     )
 
-    tools = Tools.GetTools(llm=llm)
+    Tools.SetLanguageModel(llm)
+    tools = Tools.GetTools()
     
     agent = create_react_agent(llm=llm, prompt=prompt, tools=tools)
     
     return AgentExecutor(
         agent=agent,
         tools=tools,
-        #memory=memory,
+        memory=memory,
         handle_parsing_errors=True,
         verbose=True,
-        max_iterations=3
+        max_iterations=5
         )

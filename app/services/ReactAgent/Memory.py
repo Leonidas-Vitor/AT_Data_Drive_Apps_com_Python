@@ -7,7 +7,10 @@ def init_memory():
         Memória inicializada com o ConversationBufferMemory
     """
     return ConversationBufferMemory(
-        memory_key="chat_history", return_messages=True, k=3#, output_key="answer"
+        memory_key="chat_history", 
+        input_key="human_input",
+        return_messages=True, 
+        k=3#, output_key="answer"
     )
     #return MemorySaver()
 

@@ -87,9 +87,6 @@ def ShowMatchSelected():
             st.metric("Total de chutes", match_events[match_events['type'] == 'Shot'].shape[0])
             st.metric("Total de paralisações", match_events[match_events['type'] == 'Injury Stoppage'].shape[0])
 
-        st.subheader("Principais eventos da partida", divider=True)
-        main_events = at_g.get_sb_match_main_events(match_id=st.session_state['partida_id'])
-        st.dataframe(main_events, use_container_width = True)
     else :
         st.error("Selecione uma partida")
 

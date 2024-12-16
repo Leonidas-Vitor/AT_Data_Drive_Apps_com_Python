@@ -19,20 +19,3 @@ MATCH_NARRATIVE:
     temperature: 0.2
 
   model: gemini-1.5-flash
-
-TRANSLATE_CONFIG:
-  system_instruction:
-    Traduza para o português do Brasil o texto;
-
-  safety_settings:
-    HARM_CATEGORY_HATE_SPEECH: BLOCK_NONE
-    HARM_CATEGORY_HARASSMENT: BLOCK_NONE
-    HARM_CATEGORY_SEXUALLY_EXPLICIT: BLOCK_NONE
-    HARM_CATEGORY_DANGEROUS_CONTENT: BLOCK_NONE
-
-  generation_config:
-    candidate_count: 1
-    max_output_tokens: 500
-    temperature: 0.2
-
-  model: gemini-1.5-flash

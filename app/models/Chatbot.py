@@ -42,11 +42,11 @@ with st.container():
                             #"": st.session_state['temporada_id'],
                             "tool_names": tools_names,
                             "tools": tools_description,
-                            "input": user_input,
+                            "human_input": user_input,
                             "agent_scratchpad": "",
                         }
 
-                        st.write(f"Input to agent: {input_data}")
+                        #st.write(f"Input to agent: {input_data}")
                         response = agent_chain.invoke(
                             input_data,
                             callbacks = [st_callback]
@@ -64,6 +64,16 @@ with st.container():
             #st.session_state[memoryKey].clear()
             MEMORY.clear()
             st.rerun()
+            
+        st.divider()
+        st.write('Exemplos de perguntas que você pode fazer:')
+        st.write(''' 
+                 - Quem deu mais passes na partida?
+                 - Qual jogador teve mais finalizações no primeiro tempo?
+                 - Quais são as estatísticas do jogador X?
+                 - Quantos passes teve a partida?
+                 - Quem são os jogadores de cada time?
+                 ''')
 
         if HistorySize(MEMORY) == 3:
             st.warning('Limite atingido, reinicia o chat para continuar')

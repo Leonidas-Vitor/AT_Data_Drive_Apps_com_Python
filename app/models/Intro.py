@@ -1,5 +1,7 @@
 import streamlit as st
 import os
+from services import DashboardComponents as at_i
+
 
 path_to_logo = os.path.join(os.path.dirname(__file__), '..','..', 'images', 'Infnet_logo.png')
 
@@ -26,3 +28,4 @@ st.markdown(html_p % tuple([25,'Aluno: Leônidas Almeida']),unsafe_allow_html = 
 st.markdown(html_p % tuple([25,f'E-mail: <a href= mailto:{email}>{email}</a>']),unsafe_allow_html = True)
 st.markdown(html_p % tuple([25,f'GitHub Aplicação: <a href={github_link}>Link para o repositório</a>']),unsafe_allow_html = True)
 
+at_i.select_match()
