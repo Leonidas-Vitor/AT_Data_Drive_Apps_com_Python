@@ -1,8 +1,7 @@
 import pandas as pd
 from fastapi import APIRouter, HTTPException, Depends
 from typing import List
-from api.models.statsbomb_models import StockParams
-from api.services import statsbomb_services as sb_services
+from api.services import Statsbomb_Methods as sb_services
 from api.services import gemini_services as ge_services
 from api.models import InputModels as in_models, OutputModels as out_models
 #from services import calendar_services
@@ -50,7 +49,6 @@ def GetMatchSummary(params: in_models.MatchSummary = Depends()):
     '''
     Retorna um resumo de uma partida específica
     '''
-    print(params)
     mainEvents = GetMatchMainEvents(in_models.MatchParams(match_id=params.match_id))
      
     matchSummary = out_models.MatchSummary(match_summary=ge_services.GetMatchSummary(mainEvents, params.narration_style))

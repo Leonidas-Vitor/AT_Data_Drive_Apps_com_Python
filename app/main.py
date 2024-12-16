@@ -5,18 +5,17 @@ from streamlit_extras.app_logo import add_logo
 
 intro_page = st.Page("models/Intro.py", title="Introdução", icon="🏡")#📑
 
-#business_model_canvas = st.Page("model/BusinessModelCanvas.py", title="Business Model Canvas", icon="🗺️")
-#project_charter = st.Page("model/ProjectCharter.py", title="Project Charter", icon="🛣️")
 about = st.Page("models/About.py", title="Sobre", icon="✨")
 
-aplication = st.Page("models/MatchStats.py", title="MatchStats", icon="⚽")
-#update_db = st.Page("model/UpdateDB.py", title="Atualizar Banco de Dados", icon="🔄")
+matchStats = st.Page("models/MatchStats.py", title="MatchStats", icon="⚽")
+playerCompare = st.Page("models/PlayerCompare.py", title="Comparar Jogadores", icon="🔍")
+chatbot = st.Page("models/Chatbot.py", title="Chatbot", icon="💬")
 doc_api = st.Page("models/DocAPI.py", title="Doc API", icon="📡")
 
 pages = {
         'Introdução': [intro_page],
         'Sobre': [about],
-        'Aplicação': [aplication, doc_api, ]
+        'Aplicação': [matchStats, playerCompare, chatbot, doc_api, ]
 }
 
 
@@ -36,6 +35,9 @@ def load_configs():
                 st.session_state['gemini_config'] = yaml.safe_load(arquivo)
 
 add_logo("images/infnet-30-horizontal-branco.png", height=156)
+
+
+#at_i.ShowMatchSelector()
 
 pg.run()
 
