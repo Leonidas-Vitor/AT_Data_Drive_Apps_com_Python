@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 import yaml
 import json
+import os
 
 def GetGeminiConfigs(config_type : str):
     with open('configs/gemini_configs.yaml') as file:
@@ -11,7 +12,7 @@ def GetGeminiConfigs(config_type : str):
 
 
 def GetGeminiModel(config : dict):
-    genai.configure(api_key=st.secrets["GEMINI_KEY"])
+    genai.configure(api_key=os.environ["GEMINI_KEY"])
     if 'system_instruction' not in config:
         config['system_instruction'] = None
     if 'safety_settings' not in config:
